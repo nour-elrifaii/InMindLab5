@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="FluentValidation" Version="12.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.*" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.*">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lab5.Domain\Lab5.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

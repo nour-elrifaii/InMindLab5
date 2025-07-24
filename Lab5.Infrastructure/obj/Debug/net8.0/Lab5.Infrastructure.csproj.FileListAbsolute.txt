@@ -1,0 +1,12 @@
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\bin\Debug\net8.0\Lab5.Infrastructure.deps.json
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\bin\Debug\net8.0\Lab5.Infrastructure.dll
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\bin\Debug\net8.0\Lab5.Infrastructure.pdb
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.AssemblyInfo.cs
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.dll
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\refint\Lab5.Infrastructure.dll
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\Lab5.Infrastructure.pdb
+C:\Users\User\RiderProjects\Lab5\Lab5.Infrastructure\obj\Debug\net8.0\ref\Lab5.Infrastructure.dll
