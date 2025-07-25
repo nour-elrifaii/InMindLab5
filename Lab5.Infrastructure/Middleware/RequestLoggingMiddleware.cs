@@ -1,9 +1,11 @@
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+
 namespace Lab5.Infrastructure.Middleware;
 
 
@@ -42,7 +44,19 @@ public class RequestLoggingMiddleware
         var timestamp= DateTime.UtcNow;
         _logger.LogInformation("Timestamp: {timestamp}", timestamp);
         
-        await _next(context);
+        var stopwatch= Stopwatch.StartNew();
+        try
+        {
+            await _next(context);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "unhandled exception");
+            throw;
+        }
+        stopwatch.Stop();
+        
+        //await _next(context);
         
         var statusCode = context.Response.StatusCode;
         _logger.LogInformation("StatusCode: {statusCode}", statusCode);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {}
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
         "projectName": "Lab5.Infrastructure",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -61,7 +61,27 @@
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[8.*, )"
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.ClientInfo": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [

@@ -10,3 +10,16 @@ C:\Users\User\RiderProjects\Lab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.dll
 C:\Users\User\RiderProjects\Lab5\Lab5.Common\obj\Debug\net8.0\refint\Lab5.Common.dll
 C:\Users\User\RiderProjects\Lab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.pdb
 C:\Users\User\RiderProjects\Lab5\Lab5.Common\obj\Debug\net8.0\ref\Lab5.Common.dll
+C:\Users\User\Documents\InMindLab5\Lab5.Common\bin\Debug\net8.0\Lab5.Common.deps.json
+C:\Users\User\Documents\InMindLab5\Lab5.Common\bin\Debug\net8.0\Lab5.Common.dll
+C:\Users\User\Documents\InMindLab5\Lab5.Common\bin\Debug\net8.0\Lab5.Common.pdb
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.csproj.AssemblyReference.cache
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.AssemblyInfoInputs.cache
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.AssemblyInfo.cs
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.sourcelink.json
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.dll
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\refint\Lab5.Common.dll
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\Lab5.Common.pdb
+C:\Users\User\Documents\InMindLab5\Lab5.Common\obj\Debug\net8.0\ref\Lab5.Common.dll

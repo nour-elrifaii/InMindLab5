@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.API\\Lab5.API.csproj": {}
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.API\\Lab5.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.API\\Lab5.API.csproj": {
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.API\\Lab5.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.API\\Lab5.API.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.API\\Lab5.API.csproj",
         "projectName": "Lab5.API",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.API\\Lab5.API.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.API\\Lab5.API.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.API\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,14 +26,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Application\\Lab5.Application.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Application\\Lab5.Application.csproj"
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Application\\Lab5.Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Application\\Lab5.Application.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj"
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Persistence\\Lab5.Persistence.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Persistence\\Lab5.Persistence.csproj"
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj"
+              },
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj"
               }
             }
           }
@@ -79,9 +82,33 @@
               "target": "Package",
               "version": "[8.*, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.*, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.ClientInfo": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -111,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Application\\Lab5.Application.csproj": {
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Application\\Lab5.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Application\\Lab5.Application.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Application\\Lab5.Application.csproj",
         "projectName": "Lab5.Application",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Application\\Lab5.Application.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Application\\Lab5.Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Application\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -133,8 +160,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj"
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj"
               }
             }
           }
@@ -161,6 +188,30 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[12.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.ClientInfo": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
@@ -183,14 +234,14 @@
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj": {
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj",
         "projectName": "Lab5.Domain",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -239,6 +290,30 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.*, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.ClientInfo": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
@@ -261,14 +336,114 @@
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Persistence\\Lab5.Persistence.csproj": {
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Persistence\\Lab5.Persistence.csproj",
-        "projectName": "Lab5.Persistence",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Persistence\\Lab5.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
+        "projectName": "Lab5.Infrastructure",
+        "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.ClientInfo": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj",
+        "projectName": "Lab5.Persistence",
+        "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -283,8 +458,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Domain\\Lab5.Domain.csproj"
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj"
               }
             }
           }
@@ -322,9 +497,33 @@
               "target": "Package",
               "version": "[8.*, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.*, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.ClientInfo": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
