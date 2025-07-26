@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using Microsoft.AspNetCore.Localization;
 using StackExchange.Redis;
+using Hangfire;
+using Lab5.Application.BackgroundJobs;
 
 
 namespace Lab5.API.Controllers;
@@ -64,7 +66,8 @@ public class StudentsController : ControllerBase
         var student = _context.Students.FirstOrDefault(s => s.Id == id);
         return Ok(_mapper.Map<StudentViewModel>(student));
     }
-
+    
+    
     [HttpGet("search")]
     public IActionResult GetStudentByName([FromQuery] string name)
     {
@@ -87,6 +90,9 @@ public class StudentsController : ControllerBase
         var student = _mapper.Map<Student>(dto);
         await _context.Students.AddAsync(student);
         await _context.SaveChangesAsync();
+       BackgroundJob.Enqueue<IBackgroundJobService>(service =>
+           service.SendConfirmationEmail(student.Name, student.Email));
+
         return Ok(_mapper.Map<StudentViewModel>(student));
     }
     [HttpPost("AddCourse")]

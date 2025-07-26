@@ -10,7 +10,7 @@ public class UniversityMappingProfile : Profile
     public UniversityMappingProfile()
     {
         CreateMap<Student, StudentViewModel>()
-            .ForMember(d => d.Id,   e => e.MapFrom(src => src.Id))
+            .ForMember(d => d.Id, e => e.MapFrom(src => src.Id))
             .ForMember(d => d.Name, e => e.MapFrom(src => src.Name));
         
         CreateMap<CourseClass, CourseClassViewModel>()

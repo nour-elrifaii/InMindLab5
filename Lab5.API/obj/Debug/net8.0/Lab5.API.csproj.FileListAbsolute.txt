@@ -141,6 +141,10 @@ C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\FluentValidation.dl
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Fractions.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Hangfire.AspNetCore.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Hangfire.Core.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Hangfire.MemoryStorage.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Hangfire.NetCore.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\IdentityModel.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\IdentityModel.OidcClient.dll
@@ -182,6 +186,7 @@ C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Microsoft.IdentityM
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Npgsql.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
@@ -213,6 +218,20 @@ C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\System.IO.Pipelines
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\YamlDotNet.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\ca\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\de\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\es\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\fa\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\fr\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\nb\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\nl\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\pt-BR\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\pt-PT\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\pt\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\sv\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\tr-TR\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -303,3 +322,4 @@ C:\Users\User\Documents\InMindLab5\Lab5.API\obj\Debug\net8.0\refint\Lab5.API.dll
 C:\Users\User\Documents\InMindLab5\Lab5.API\obj\Debug\net8.0\Lab5.API.pdb
 C:\Users\User\Documents\InMindLab5\Lab5.API\obj\Debug\net8.0\Lab5.API.genruntimeconfig.cache
 C:\Users\User\Documents\InMindLab5\Lab5.API\obj\Debug\net8.0\ref\Lab5.API.dll
+C:\Users\User\Documents\InMindLab5\Lab5.API\bin\Debug\net8.0\Hangfire.SqlServer.dll

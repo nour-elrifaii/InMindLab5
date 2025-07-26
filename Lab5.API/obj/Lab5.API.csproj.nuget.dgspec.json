@@ -88,6 +88,18 @@
               "target": "Package",
               "version": "[11.*, )"
             },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.8.1.2, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"
@@ -244,6 +256,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"
@@ -371,6 +387,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[12.0.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
             },
             "MediatR": {
               "target": "Package",
@@ -514,6 +534,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"
@@ -653,6 +677,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[12.0.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.20, )"
             },
             "MediatR": {
               "target": "Package",
