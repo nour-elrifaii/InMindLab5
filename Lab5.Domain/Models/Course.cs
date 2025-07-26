@@ -6,6 +6,6 @@ public class Course
 {
     public int CourseID { get; set; }
     public string CourseName { get; set; }=string.Empty;
-    public int TeacherId { get; set; }
+    public required int TeacherId { get; set; }
     public ICollection<CourseClass>? Classes { get; set; }
 }

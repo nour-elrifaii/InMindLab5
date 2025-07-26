@@ -15,11 +15,14 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.*" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.*">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.18" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.*" />
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
@@ -35,6 +38,57 @@
     <ProjectReference Include="..\Lab5.Domain\Lab5.Domain.csproj" />
     <ProjectReference Include="..\Lab5.Application\Lab5.Application.csproj" />
     <ProjectReference Include="..\Lab5.Infrastructure\Lab5.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\StudentCheck.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StudentCheck.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\StudentCheck.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StudentCheck.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\StudentCheck.de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StudentCheck.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Lab5.API.Resources.SharedResource.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lab5.API.SharedResource.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Lab5.API.Resource.SharedResource.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lab5.API.SharedResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\StudentCheck.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentCheck.en.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\StudentCheck.fr.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentCheck.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\StudentCheck.de.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentCheck.de.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Lab5.API.Resources.SharedResource.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lab5.API.Resources.SharedResource.en.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Lab5.API.Resource.SharedResource.fr.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lab5.API.Resource.SharedResource.fr.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

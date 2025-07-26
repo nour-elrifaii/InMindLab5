@@ -1,3 +1,4 @@
+using System.Globalization;
 using Lab5.Application.Mappers;
 using Microsoft.EntityFrameworkCore;
 using Lab5.Persistence.Data;
@@ -10,6 +11,8 @@ using Lab5.Infrastructure;
 using Serilog;
 using Lab5.Infrastructure.Middleware;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,14 +29,32 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 builder.Services.AddHealthChecks();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    var cultures = new List<CultureInfo>
+    {
+        new CultureInfo("en"),
+        new CultureInfo("fr"),
 
+    };
+    options.DefaultRequestCulture = new RequestCulture("fr");
+    options.SupportedCultures = cultures;
+    options.SupportedUICultures = cultures;
+    options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+});
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers()
-    .AddFluentValidation(config =>
+builder.Services.AddControllers();
+    /*.AddFluentValidation(config =>
     {
         config.RegisterValidatorsFromAssemblyContaining<StudentValidator>();
-    });
+    });*/
+    builder.Services
+        .AddFluentValidationAutoValidation()
+        .AddFluentValidationClientsideAdapters()
+        .AddValidatorsFromAssemblyContaining<Program>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<UniversityContext>(options=>
@@ -46,13 +67,16 @@ builder.Services.AddHealthChecksUI().AddInMemoryStorage();
 
 
 
-var app = builder.Build();
 
+var app = builder.Build();
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 app.UseMiddleware<RequestLoggingMiddleware>();
+
 app.MapHealthChecks("/health", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse,
 });
+
 app.MapHealthChecksUI();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

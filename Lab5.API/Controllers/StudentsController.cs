@@ -8,6 +8,9 @@ using Lab5.Domain.Models;
 using Lab5.Application.Mappers;
 using Lab5.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
+using Microsoft.AspNetCore.Localization;
+
 
 namespace Lab5.API.Controllers;
 
@@ -18,11 +21,22 @@ public class StudentsController : ControllerBase
     private readonly UniversityContext  _context;
     private readonly ObjectMapperService _objectMapperService;
     private readonly IMapper _mapper;
-    public StudentsController(UniversityContext context,ObjectMapperService mapperService, IMapper mapper)
+    private readonly IStringLocalizer<SharedResource> _localizer;
+    public StudentsController(UniversityContext context,ObjectMapperService mapperService, IMapper mapper, IStringLocalizer<SharedResource> localizer)
     {
         _context = context;
         _objectMapperService = mapperService;
         _mapper = mapper;
+        _localizer = localizer;
+    }
+
+    [HttpGet("Tesssst")]
+    public IActionResult GetTest()
+    {
+        var test = _localizer["students found"];
+        Console.WriteLine(test);
+        Console.WriteLine($"Culture: {CultureInfo.CurrentUICulture}");
+        return Ok(new {Test= test});   
     }
     
 
