@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab5.API")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+564047fd682d610ef7506b50b8f7b7562c61d091")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b44c3dd47dc931b4c5b7b04597c0279139dfdce")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab5.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab5.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

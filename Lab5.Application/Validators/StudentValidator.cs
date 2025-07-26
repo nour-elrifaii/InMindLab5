@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using FluentValidation;
-using Lab5.Apllication.ViewModels;
+using Lab5.Application.ViewModels;
 using Lab5.Domain.Models;
 
 namespace Lab5.Application.Validators;

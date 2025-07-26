@@ -15,10 +15,12 @@
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
           "Lab5.Persistence": "1.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Serilog.AspNetCore": "9.0.0",
@@ -169,6 +171,28 @@
           "lib/net8.0/KubernetesClient.dll": {
             "assemblyVersion": "15.0.0.0",
             "fileVersion": "15.0.1.62974"
+          }
+        }
+      },
+      "MediatR/13.0.0": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging": "9.0.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/MediatR.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.0.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
           }
         }
       },
@@ -525,6 +549,20 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.StackExchangeRedis/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0",
+          "StackExchange.Redis": "2.6.122"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.123.58008"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
@@ -739,44 +777,44 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Abstractions/7.1.2": {
+      "Microsoft.IdentityModel.Abstractions/8.0.1": {
         "runtime": {
           "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.41121"
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.50722"
           }
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/7.1.2": {
+      "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "7.1.2"
+          "Microsoft.IdentityModel.Tokens": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.41121"
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.50722"
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/7.1.2": {
+      "Microsoft.IdentityModel.Logging/8.0.1": {
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "7.1.2"
+          "Microsoft.IdentityModel.Abstractions": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.41121"
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.50722"
           }
         }
       },
-      "Microsoft.IdentityModel.Tokens/7.1.2": {
+      "Microsoft.IdentityModel.Tokens/8.0.1": {
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "7.1.2"
+          "Microsoft.IdentityModel.Logging": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.41121"
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.50722"
           }
         }
       },
@@ -819,6 +857,17 @@
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "8.0.11.0",
             "fileVersion": "8.0.11.0"
+          }
+        }
+      },
+      "Pipelines.Sockets.Unofficial/2.2.8": {
+        "dependencies": {
+          "System.IO.Pipelines": "9.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.2.8.1080"
           }
         }
       },
@@ -965,6 +1014,17 @@
           }
         }
       },
+      "StackExchange.Redis/2.6.122": {
+        "dependencies": {
+          "Pipelines.Sockets.Unofficial": "2.2.8"
+        },
+        "runtime": {
+          "lib/net6.0/StackExchange.Redis.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.6.122.38350"
+          }
+        }
+      },
       "System.Buffers/4.6.0": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -1049,8 +1109,8 @@
       },
       "System.IdentityModel.Tokens.Jwt/7.1.2": {
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "7.1.2",
-          "Microsoft.IdentityModel.Tokens": "7.1.2"
+          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1",
+          "Microsoft.IdentityModel.Tokens": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll": {
@@ -1123,9 +1183,11 @@
           "AspNetCore.HealthChecks.UI.InMemory.Storage": "9.0.0",
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore": "8.0.18",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Serilog.AspNetCore": "9.0.0",
@@ -1150,9 +1212,11 @@
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
           "Lab5.Domain": "1.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore": "8.0.18",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.11",
@@ -1267,6 +1331,20 @@
       "sha512": "sha512-IOsMJaBpiHELr7ZeiJQypdtLDbc/HqxbEh9UMaDvLpBvGIzS+KhjA0LJVEbGgvubmhWHxLPfgHAL0le1zr2RwA==",
       "path": "kubernetesclient/15.0.1",
       "hashPath": "kubernetesclient.15.0.1.nupkg.sha512"
+    },
+    "MediatR/13.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gR5vSoIINsXs86we38qdIfG62f6ngxT2sSaePsakJGHJIgLUDA7b41lujGXGWxX0hWyk8suajr2VKcAYSVMtdw==",
+      "path": "mediatr/13.0.0",
+      "hashPath": "mediatr.13.0.0.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http/2.2.2": {
       "type": "package",
@@ -1415,6 +1493,13 @@
       "path": "microsoft.extensions.caching.memory/8.0.1",
       "hashPath": "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512"
     },
+    "Microsoft.Extensions.Caching.StackExchangeRedis/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z6Wg+oyypeXfYNUbrFZ/zzqmoQOH0SpvAzj8fWEf8kF8HmmkLkJ4yIHGOu/R1tjCpoWzhgWxgME6Ct+ovRA+Ig==",
+      "path": "microsoft.extensions.caching.stackexchangeredis/8.0.1",
+      "hashPath": "microsoft.extensions.caching.stackexchangeredis.8.0.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1562,33 +1647,33 @@
       "path": "microsoft.extensions.primitives/9.0.0",
       "hashPath": "microsoft.extensions.primitives.9.0.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Abstractions/7.1.2": {
+    "Microsoft.IdentityModel.Abstractions/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-33eTIA2uO/L9utJjZWbKsMSVsQf7F8vtd6q5mQX7ZJzNvCpci5fleD6AeANGlbbb7WX7XKxq9+Dkb5e3GNDrmQ==",
-      "path": "microsoft.identitymodel.abstractions/7.1.2",
-      "hashPath": "microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512"
+      "sha512": "sha512-OtlIWcyX01olfdevPKZdIPfBEvbcioDyBiE/Z2lHsopsMD7twcKtlN9kMevHmI5IIPhFpfwCIiR6qHQz1WHUIw==",
+      "path": "microsoft.identitymodel.abstractions/8.0.1",
+      "hashPath": "microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.JsonWebTokens/7.1.2": {
+    "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cloLGeZolXbCJhJBc5OC05uhrdhdPL6MWHuVUnkkUvPDeK7HkwThBaLZ1XjBQVk9YhxXE2OvHXnKi0PLleXxDg==",
-      "path": "microsoft.identitymodel.jsonwebtokens/7.1.2",
-      "hashPath": "microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512"
+      "sha512": "sha512-s6++gF9x0rQApQzOBbSyp4jUaAlwm+DroKfL8gdOHxs83k8SJfUXhuc46rDB3rNXBQ1MVRxqKUrqFhO/M0E97g==",
+      "path": "microsoft.identitymodel.jsonwebtokens/8.0.1",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Logging/7.1.2": {
+    "Microsoft.IdentityModel.Logging/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YCxBt2EeJP8fcXk9desChkWI+0vFqFLvBwrz5hBMsoh0KJE6BC66DnzkdzkJNqMltLromc52dkdT206jJ38cTw==",
-      "path": "microsoft.identitymodel.logging/7.1.2",
-      "hashPath": "microsoft.identitymodel.logging.7.1.2.nupkg.sha512"
+      "sha512": "sha512-UCPF2exZqBXe7v/6sGNiM6zCQOUXXQ9+v5VTb9gPB8ZSUPnX53BxlN78v2jsbIvK9Dq4GovQxo23x8JgWvm/Qg==",
+      "path": "microsoft.identitymodel.logging/8.0.1",
+      "hashPath": "microsoft.identitymodel.logging.8.0.1.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Tokens/7.1.2": {
+    "Microsoft.IdentityModel.Tokens/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oICJMqr3aNEDZOwnH5SK49bR6Z4aX0zEAnOLuhloumOSuqnNq+GWBdQyrgILnlcT5xj09xKCP/7Y7gJYB+ls/g==",
-      "path": "microsoft.identitymodel.tokens/7.1.2",
-      "hashPath": "microsoft.identitymodel.tokens.7.1.2.nupkg.sha512"
+      "sha512": "sha512-kDimB6Dkd3nkW2oZPDkMkVHfQt3IDqO5gL0oa8WVy3OP4uE8Ij+8TXnqg9TOd9ufjsY3IDiGz7pCUbnfL18tjg==",
+      "path": "microsoft.identitymodel.tokens/8.0.1",
+      "hashPath": "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512"
     },
     "Microsoft.Net.Http.Headers/2.3.0": {
       "type": "package",
@@ -1617,6 +1702,13 @@
       "sha512": "sha512-leShR/O/nSIS3Jpj8yUBmkzaXzBbtlV326+MYkX2BwAj2qSNrUv/H6m8G9Hnv2zUkQYccTpmV5jIVq5vdciEUA==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.11",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512"
+    },
+    "Pipelines.Sockets.Unofficial/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
+      "path": "pipelines.sockets.unofficial/2.2.8",
+      "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
     },
     "Serilog/4.3.0": {
       "type": "package",
@@ -1701,6 +1793,13 @@
       "sha512": "sha512-aNU8A0K322q7+voPNmp1/qNPH+9QK8xvM1p72sMmCG0wGlshFzmtDW9QnVSoSYCj0MgQKcMOlgooovtBhRlNHw==",
       "path": "serilog.sinks.seq/9.0.0",
       "hashPath": "serilog.sinks.seq.9.0.0.nupkg.sha512"
+    },
+    "StackExchange.Redis/2.6.122": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wp7mvGpFXaevfZ07/SDeh/6YHUJEgwJIGyjbDWKBYbPwKMJQYFz9zFEmBptqtVzqvSgft5nlewwutoaMaG0LPA==",
+      "path": "stackexchange.redis/2.6.122",
+      "hashPath": "stackexchange.redis.2.6.122.nupkg.sha512"
     },
     "System.Buffers/4.6.0": {
       "type": "package",

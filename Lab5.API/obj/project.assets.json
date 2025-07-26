@@ -264,6 +264,38 @@
           }
         }
       },
+      "MediatR/13.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "[2.0.1, 3.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1"
+        },
+        "compile": {
+          "lib/net8.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Http/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -812,6 +844,25 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Caching.StackExchangeRedis/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.1",
+          "StackExchange.Redis": "2.6.122"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -1210,7 +1261,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.IdentityModel.Abstractions/7.1.2": {
+      "Microsoft.IdentityModel.Abstractions/8.0.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
@@ -1223,10 +1274,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/7.1.2": {
+      "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "7.1.2"
+          "Microsoft.IdentityModel.Tokens": "8.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -1239,10 +1290,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/7.1.2": {
+      "Microsoft.IdentityModel.Logging/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "7.1.2"
+          "Microsoft.IdentityModel.Abstractions": "8.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
@@ -1255,10 +1306,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Tokens/7.1.2": {
+      "Microsoft.IdentityModel.Tokens/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "7.1.2"
+          "Microsoft.IdentityModel.Logging": "8.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
@@ -1344,6 +1395,22 @@
         },
         "runtime": {
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Pipelines.Sockets.Unofficial/2.2.8": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "5.0.1"
+        },
+        "compile": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
             "related": ".xml"
           }
         }
@@ -1556,6 +1623,22 @@
         },
         "runtime": {
           "lib/net6.0/Serilog.Sinks.Seq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "StackExchange.Redis/2.6.122": {
+        "type": "package",
+        "dependencies": {
+          "Pipelines.Sockets.Unofficial": "2.2.8"
+        },
+        "compile": {
+          "lib/net6.0/StackExchange.Redis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/StackExchange.Redis.dll": {
             "related": ".xml"
           }
         }
@@ -1964,8 +2047,11 @@
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
           "Lab5.Domain": "1.0.0",
+          "Lab5.Persistence": "1.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Serilog.AspNetCore": "9.0.0",
@@ -1991,9 +2077,11 @@
           "AspNetCore.HealthChecks.UI.InMemory.Storage": "9.0.0",
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Serilog.AspNetCore": "9.0.0",
@@ -2020,10 +2108,12 @@
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
           "Lab5.Persistence": "1.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Serilog.AspNetCore": "9.0.0",
@@ -2050,9 +2140,11 @@
           "AutoMapper": "12.0.1",
           "FluentValidation": "12.0.0",
           "Lab5.Domain": "1.0.0",
+          "MediatR": "13.0.0",
           "Microsoft.AspNetCore.Localization": "2.3.0",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.18",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.1",
           "Microsoft.Extensions.Localization": "8.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
@@ -2330,6 +2422,40 @@
         "lib/net8.0/KubernetesClient.pdb",
         "lib/net8.0/KubernetesClient.xml",
         "logo.png"
+      ]
+    },
+    "MediatR/13.0.0": {
+      "sha512": "gR5vSoIINsXs86we38qdIfG62f6ngxT2sSaePsakJGHJIgLUDA7b41lujGXGWxX0hWyk8suajr2VKcAYSVMtdw==",
+      "type": "package",
+      "path": "mediatr/13.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "gradient_128x128.png",
+        "lib/net8.0/MediatR.dll",
+        "lib/net8.0/MediatR.xml",
+        "lib/net9.0/MediatR.dll",
+        "lib/net9.0/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "mediatr.13.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/2.0.1": {
+      "sha512": "FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "type": "package",
+      "path": "mediatr.contracts/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.2.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Http/2.2.2": {
@@ -3329,6 +3455,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Caching.StackExchangeRedis/8.0.1": {
+      "sha512": "Z6Wg+oyypeXfYNUbrFZ/zzqmoQOH0SpvAzj8fWEf8kF8HmmkLkJ4yIHGOu/R1tjCpoWzhgWxgME6Ct+ovRA+Ig==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.stackexchangeredis/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Caching.StackExchangeRedis.dll",
+        "lib/net462/Microsoft.Extensions.Caching.StackExchangeRedis.xml",
+        "lib/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll",
+        "lib/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.StackExchangeRedis.xml",
+        "microsoft.extensions.caching.stackexchangeredis.8.0.1.nupkg.sha512",
+        "microsoft.extensions.caching.stackexchangeredis.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "sha512": "0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
       "type": "package",
@@ -3951,15 +4096,13 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.IdentityModel.Abstractions/7.1.2": {
-      "sha512": "33eTIA2uO/L9utJjZWbKsMSVsQf7F8vtd6q5mQX7ZJzNvCpci5fleD6AeANGlbbb7WX7XKxq9+Dkb5e3GNDrmQ==",
+    "Microsoft.IdentityModel.Abstractions/8.0.1": {
+      "sha512": "OtlIWcyX01olfdevPKZdIPfBEvbcioDyBiE/Z2lHsopsMD7twcKtlN9kMevHmI5IIPhFpfwCIiR6qHQz1WHUIw==",
       "type": "package",
-      "path": "microsoft.identitymodel.abstractions/7.1.2",
+      "path": "microsoft.identitymodel.abstractions/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net461/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
@@ -3968,21 +4111,21 @@
         "lib/net6.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net8.0/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net9.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
-        "microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
         "microsoft.identitymodel.abstractions.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/7.1.2": {
-      "sha512": "cloLGeZolXbCJhJBc5OC05uhrdhdPL6MWHuVUnkkUvPDeK7HkwThBaLZ1XjBQVk9YhxXE2OvHXnKi0PLleXxDg==",
+    "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
+      "sha512": "s6++gF9x0rQApQzOBbSyp4jUaAlwm+DroKfL8gdOHxs83k8SJfUXhuc46rDB3rNXBQ1MVRxqKUrqFhO/M0E97g==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/7.1.2",
+      "path": "microsoft.identitymodel.jsonwebtokens/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net462/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net462/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
@@ -3991,21 +4134,21 @@
         "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/7.1.2": {
-      "sha512": "YCxBt2EeJP8fcXk9desChkWI+0vFqFLvBwrz5hBMsoh0KJE6BC66DnzkdzkJNqMltLromc52dkdT206jJ38cTw==",
+    "Microsoft.IdentityModel.Logging/8.0.1": {
+      "sha512": "UCPF2exZqBXe7v/6sGNiM6zCQOUXXQ9+v5VTb9gPB8ZSUPnX53BxlN78v2jsbIvK9Dq4GovQxo23x8JgWvm/Qg==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/7.1.2",
+      "path": "microsoft.identitymodel.logging/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/Microsoft.IdentityModel.Logging.dll",
-        "lib/net461/Microsoft.IdentityModel.Logging.xml",
         "lib/net462/Microsoft.IdentityModel.Logging.dll",
         "lib/net462/Microsoft.IdentityModel.Logging.xml",
         "lib/net472/Microsoft.IdentityModel.Logging.dll",
@@ -4014,21 +4157,21 @@
         "lib/net6.0/Microsoft.IdentityModel.Logging.xml",
         "lib/net8.0/Microsoft.IdentityModel.Logging.dll",
         "lib/net8.0/Microsoft.IdentityModel.Logging.xml",
+        "lib/net9.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/net9.0/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/7.1.2": {
-      "sha512": "oICJMqr3aNEDZOwnH5SK49bR6Z4aX0zEAnOLuhloumOSuqnNq+GWBdQyrgILnlcT5xj09xKCP/7Y7gJYB+ls/g==",
+    "Microsoft.IdentityModel.Tokens/8.0.1": {
+      "sha512": "kDimB6Dkd3nkW2oZPDkMkVHfQt3IDqO5gL0oa8WVy3OP4uE8Ij+8TXnqg9TOd9ufjsY3IDiGz7pCUbnfL18tjg==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/7.1.2",
+      "path": "microsoft.identitymodel.tokens/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
-        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
         "lib/net462/Microsoft.IdentityModel.Tokens.dll",
         "lib/net462/Microsoft.IdentityModel.Tokens.xml",
         "lib/net472/Microsoft.IdentityModel.Tokens.dll",
@@ -4037,9 +4180,11 @@
         "lib/net6.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/net8.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/net8.0/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net9.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net9.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
+        "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -4120,6 +4265,29 @@
         "npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
+      ]
+    },
+    "Pipelines.Sockets.Unofficial/2.2.8": {
+      "sha512": "zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
+      "type": "package",
+      "path": "pipelines.sockets.unofficial/2.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Pipelines.Sockets.Unofficial.dll",
+        "lib/net461/Pipelines.Sockets.Unofficial.xml",
+        "lib/net472/Pipelines.Sockets.Unofficial.dll",
+        "lib/net472/Pipelines.Sockets.Unofficial.xml",
+        "lib/net5.0/Pipelines.Sockets.Unofficial.dll",
+        "lib/net5.0/Pipelines.Sockets.Unofficial.xml",
+        "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll",
+        "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.xml",
+        "lib/netstandard2.0/Pipelines.Sockets.Unofficial.dll",
+        "lib/netstandard2.0/Pipelines.Sockets.Unofficial.xml",
+        "lib/netstandard2.1/Pipelines.Sockets.Unofficial.dll",
+        "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
+        "pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+        "pipelines.sockets.unofficial.nuspec"
       ]
     },
     "Serilog/4.3.0": {
@@ -4387,6 +4555,27 @@
         "lib/netstandard2.0/Serilog.Sinks.Seq.xml",
         "serilog.sinks.seq.9.0.0.nupkg.sha512",
         "serilog.sinks.seq.nuspec"
+      ]
+    },
+    "StackExchange.Redis/2.6.122": {
+      "sha512": "wp7mvGpFXaevfZ07/SDeh/6YHUJEgwJIGyjbDWKBYbPwKMJQYFz9zFEmBptqtVzqvSgft5nlewwutoaMaG0LPA==",
+      "type": "package",
+      "path": "stackexchange.redis/2.6.122",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/StackExchange.Redis.dll",
+        "lib/net461/StackExchange.Redis.xml",
+        "lib/net472/StackExchange.Redis.dll",
+        "lib/net472/StackExchange.Redis.xml",
+        "lib/net6.0/StackExchange.Redis.dll",
+        "lib/net6.0/StackExchange.Redis.xml",
+        "lib/netcoreapp3.1/StackExchange.Redis.dll",
+        "lib/netcoreapp3.1/StackExchange.Redis.xml",
+        "lib/netstandard2.0/StackExchange.Redis.dll",
+        "lib/netstandard2.0/StackExchange.Redis.xml",
+        "stackexchange.redis.2.6.122.nupkg.sha512",
+        "stackexchange.redis.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.6.2": {
@@ -5046,10 +5235,12 @@
       "Lab5.Domain >= 1.0.0",
       "Lab5.Infrastructure >= 1.0.0",
       "Lab5.Persistence >= 1.0.0",
+      "MediatR >= 13.0.0",
       "Microsoft.AspNetCore.Localization >= 2.3.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 8.*",
       "Microsoft.EntityFrameworkCore.Relational >= 8.0.18",
+      "Microsoft.Extensions.Caching.StackExchangeRedis >= 8.0.1",
       "Microsoft.Extensions.Localization >= 8.0.1",
       "Microsoft.Extensions.Logging.Abstractions >= 9.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.*",
@@ -5148,6 +5339,10 @@
             "target": "Package",
             "version": "[11.*, )"
           },
+          "MediatR": {
+            "target": "Package",
+            "version": "[13.0.0, )"
+          },
           "Microsoft.AspNetCore.Localization": {
             "target": "Package",
             "version": "[2.3.0, )"
@@ -5165,6 +5360,10 @@
           "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[8.0.18, )"
+          },
+          "Microsoft.Extensions.Caching.StackExchangeRedis": {
+            "target": "Package",
+            "version": "[8.0.1, )"
           },
           "Microsoft.Extensions.Localization": {
             "target": "Package",

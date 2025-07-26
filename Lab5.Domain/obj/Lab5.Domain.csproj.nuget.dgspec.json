@@ -67,6 +67,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Localization": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -84,6 +88,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",

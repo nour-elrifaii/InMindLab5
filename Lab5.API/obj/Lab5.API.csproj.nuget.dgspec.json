@@ -88,6 +88,10 @@
               "target": "Package",
               "version": "[11.*, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Localization": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -105,6 +109,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",
@@ -190,6 +198,9 @@
             "projectReferences": {
               "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj": {
                 "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Domain\\Lab5.Domain.csproj"
+              },
+              "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj": {
+                "projectPath": "C:\\Users\\User\\Documents\\InMindLab5\\Lab5.Persistence\\Lab5.Persistence.csproj"
               }
             }
           }
@@ -233,6 +244,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Localization": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -240,6 +255,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",
@@ -353,6 +372,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Localization": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -370,6 +393,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",
@@ -487,6 +514,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"
@@ -502,6 +533,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",
@@ -619,6 +654,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Localization": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -636,6 +675,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",

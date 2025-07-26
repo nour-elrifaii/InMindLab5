@@ -1,6 +1,7 @@
 using AutoMapper;
+using Lab5.Application.ViewModels;
 using Lab5.Domain.Models;
-using Lab5.Apllication.ViewModels;
+using Lab5.Application.ViewModels;
 
 namespace Lab5.Application.Mappers;
 
@@ -39,5 +40,14 @@ public class UniversityMappingProfile : Profile
         CreateMap<CourseClassDto, CourseClass>()
             .ForMember(d => d.TeacherId, e => e.MapFrom(src => src.TeacherID))
             .ForMember(d => d.CourseId,  e => e.MapFrom(src => src.CourseID));
+        
+        CreateMap<Student, StudentDto>()
+            .ForMember(d => d.StudentName, e => e.MapFrom(src => src.Name));
+        
+        CreateMap<Teacher, TeacherDto>()
+            .ForMember(d => d.TeacherName, e => e.MapFrom(src => src.TeacherName));
+        
+        CreateMap<Course, CourseDto>()
+            .ForMember(d => d.CourseName, e => e.MapFrom(src => src.CourseName));
     }
 }

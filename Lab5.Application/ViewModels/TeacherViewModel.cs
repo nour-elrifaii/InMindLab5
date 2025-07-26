@@ -1,5 +1,5 @@
 
-namespace Lab5.Apllication.ViewModels;
+namespace Lab5.Application.ViewModels;
 
 public class TeacherViewModel
 {

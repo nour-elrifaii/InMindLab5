@@ -2,14 +2,16 @@
 using System.Globalization;
 using System.Runtime.InteropServices.JavaScript;
 using AutoMapper;
-using Lab5.Apllication.ViewModels;
+using Lab5.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Lab5.Domain.Models;
 using Lab5.Application.Mappers;
+using Lab5.Application.Queries;
 using Lab5.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using Microsoft.AspNetCore.Localization;
+using StackExchange.Redis;
 
 
 namespace Lab5.API.Controllers;
@@ -22,12 +24,15 @@ public class StudentsController : ControllerBase
     private readonly ObjectMapperService _objectMapperService;
     private readonly IMapper _mapper;
     private readonly IStringLocalizer<SharedResource> _localizer;
-    public StudentsController(UniversityContext context,ObjectMapperService mapperService, IMapper mapper, IStringLocalizer<SharedResource> localizer)
+    //private readonly IConnectionMultiplexer _redis;
+    private readonly MediatR.IMediator _mediator;
+    public StudentsController(UniversityContext context,ObjectMapperService mapperService, IMapper mapper, IStringLocalizer<SharedResource> localizer, MediatR.IMediator mediator)
     {
         _context = context;
         _objectMapperService = mapperService;
         _mapper = mapper;
         _localizer = localizer;
+        _mediator = mediator;
     }
 
     [HttpGet("Tesssst")]
@@ -35,16 +40,22 @@ public class StudentsController : ControllerBase
     {
         var test = _localizer["students found"];
         Console.WriteLine(test);
-        Console.WriteLine($"Culture: {CultureInfo.CurrentUICulture}");
         return Ok(new {Test= test});   
     }
     
 
     [HttpGet]
-    public IActionResult GetAllStudents()
+    public async Task<IActionResult> GetAllStudents()
     {
-        var students = _context.Students.ToList();
-        return Ok(_mapper.Map<List<StudentViewModel>>(students));
+        var students = await _mediator.Send(new GetAllStudentsQuery());
+        return Ok(students);
+    }
+
+    [HttpGet("allteachers")]
+    public async Task<IActionResult> GetAllTeachers()
+    {
+        var teachers = await _mediator.Send(new GetAllTeachersQuery());
+        return Ok(teachers);
     }
 
     [HttpGet("student/{id}")]

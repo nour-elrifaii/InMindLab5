@@ -7,9 +7,12 @@ using FluentValidation.AspNetCore;
 using HealthChecks.UI.Client;
 using Lab5.Application.Validators;
 using Lab5.Application.Mappers;
+using Lab5.Application.Queries;
+using Lab5.Domain.Models;
 using Lab5.Infrastructure;
 using Serilog;
 using Lab5.Infrastructure.Middleware;
+using Lab5.Persistence.Data.Repositories;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
@@ -42,6 +45,14 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedCultures = cultures;
     options.SupportedUICultures = cultures;
     options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+});
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllStudentsQuery).Assembly));
+builder.Services.AddScoped<IRepository<Student>, StudentRepository>();
+builder.Services.AddScoped<IRepository<Teacher>, TeacherRepository>();
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    options.InstanceName = "Lab5:";
 });
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
