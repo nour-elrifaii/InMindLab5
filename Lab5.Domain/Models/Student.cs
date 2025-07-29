@@ -7,6 +7,7 @@ namespace Lab5.Domain.Models
         public required long Id { get; set; }
         public required string Name { get; set; }
         public string? Email { get; set; }
+        public string? ProfileBlobName { get; set; }
         public ICollection<CourseClass>? RegClasses { get; set; }
     }
 }

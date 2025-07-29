@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {}
+    "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {
+    "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
         "projectName": "Lab5.Infrastructure",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.Infrastructure\\Lab5.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Lab5\\Lab5.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,9 +47,17 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.17.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.18, )"
             },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",

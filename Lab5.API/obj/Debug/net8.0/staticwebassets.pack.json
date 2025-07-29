@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\files\\map.pdf",
+      "PackagePath": "staticwebassets\\files\\map.pdf"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\images\\LAUlogo.png",
+      "PackagePath": "staticwebassets\\images\\LAUlogo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\images\\catcode.jpg",
+      "PackagePath": "staticwebassets\\images\\catcode.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lab5.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Lab5.API.props",
+      "PackagePath": "build\\Lab5.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab5.API.props",
+      "PackagePath": "buildMultiTargeting\\Lab5.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Lab5.API.props",
+      "PackagePath": "buildTransitive\\Lab5.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

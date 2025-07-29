@@ -48,6 +48,9 @@ namespace Lab5.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("integer");
+
                     b.HasKey("CourseID");
 
                     b.ToTable("Courses");
@@ -85,10 +88,13 @@ namespace Lab5.Persistence.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProfileBlobName")
                         .IsRequired()
                         .HasColumnType("text");
 

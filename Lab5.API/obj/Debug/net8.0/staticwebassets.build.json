@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "8OAc9HJQoDYBe2fbabZTCbJycoKme9HDeqzRYObN1/g=",
+  "Hash": "eF4lkP8zEq9aMkMShWUO1jz6IvRPyzD58S6nPuEA014=",
   "Source": "Lab5.API",
   "BasePath": "_content/Lab5.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab5.API\\wwwroot",
+      "Source": "Lab5.API",
+      "ContentRoot": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\",
+      "BasePath": "_content/Lab5.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\files\\map.pdf",
+      "SourceId": "Lab5.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\",
+      "BasePath": "_content/Lab5.API",
+      "RelativePath": "files/map.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\map.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\images\\catcode.jpg",
+      "SourceId": "Lab5.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\",
+      "BasePath": "_content/Lab5.API",
+      "RelativePath": "images/catcode.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\catcode.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\images\\LAUlogo.png",
+      "SourceId": "Lab5.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\RiderProjects\\InMindLab5\\Lab5.API\\wwwroot\\",
+      "BasePath": "_content/Lab5.API",
+      "RelativePath": "images/LAUlogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\LAUlogo.png"
+    }
+  ]
 }

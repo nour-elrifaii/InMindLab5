@@ -9,8 +9,10 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.*" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.17.0" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.18" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.*">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,6 +26,7 @@
     <ProjectReference Include="..\Lab5.Persistence\Lab5.Persistence.csproj" />
     <ProjectReference Include="..\Lab5.Domain\Lab5.Domain.csproj" />
     <ProjectReference Include="..\Lab5.Application\Lab5.Application.csproj" />
+    <ProjectReference Include="..\Lab5.Infrastructure\Lab5.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
