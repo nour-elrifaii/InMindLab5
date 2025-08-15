@@ -34,7 +34,7 @@ In this Lab, I implemented logging, health checks, localization, caching and bac
 
 This way, the caching logic lives in handlers, so controllers remain slim and the read path is fast and consistent.
 
-## Background Job
+## Background Jobs
 - Hangfire is configured with in-memory storage, the server is started, and the dashboard is exposed at `/hangfire`. The DI container registers `EmailService: IEmailService` and `BackgroundJobService: IBackgroundJobService`.
 - When a student is added, the controller immediately enqueues a background job.
 - `BackgroundJobService` composes a welcome subject/body, logs intent, and delegates the actual send to `IEmailService.SendEmailAsync(...)`, then logs completion.
